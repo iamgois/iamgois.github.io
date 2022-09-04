@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Design Criativo</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="nav">
+        <div>
+            <h2 class="logo"><span><a style="text-decoration: none; color: #B3EBC3; transform: rotateY(120deg);" href="#heading">Gois</a></span></h2>
+        </div>
+        <ul id="nav-menu" class="nav-menu">
+            <li id="nav-item0" class="nav-item animate__fadeInDown"><a class="active" href="#heading">Início</a></li>
+            <li id="nav-item1" class="nav-item animate__fadeInDown__2"><a class="active" href="#portfolio">Portfólio</a></li>
+            <li id="nav-item2" class="nav-item animate__fadeInDown__3"><a class="active" href="#pacotes">Pacotes</a></li>
+            <li id="nav-item3" class="nav-item animate__fadeInDown__4"><a class="active" href="#rate">Avaliações</a></li>
+          </ul>
+        <i id="nav-btn" onClick="toggleMenu()" class="fa-solid fa-bars"></i>
+    </header>
+
+    <div class="close-btn">
+      <i id="close-btn" class="fa-solid fa-xmark"></i>
+    </div>
+
+    <div onclick="reload()" class="reload-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Heading -->
+
+    <div id="heading" class="heading">
+        <div class="left">
+            <h1 class="animate__fadeInDown">Explore a sua empresa com o <span id="vendas" class="opacity-animation">Online.</span></h1>
+            <p class="animate__fadeInDown">Expanda hoje o seu negócio para o digital, aumentando assim o seu <span>alcance</span>, suas <span>vendas</span> e tirando o limite de ganhos que você pode ter com a sua empresa.
+            </p>
+            <a href="#pacotes"><button class="animate__fadeInLeft">Saber mais<i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>
+
+        <div class="right">
+            <img class="animate__fadeInRight" src="/assets/bro.svg"/>
+        </div>
+
+        <div class="infos">
+            <div class="info animate__fadeInUp">
+                <p class="info-top"><span>+500</span></p>
+                <p class="info-bottom">Clientes</p>
+            </div>
+
+            <div class="info animate__fadeInUp">
+                <p class="info-top"><span>+50K</span></p>
+                <p class="info-bottom">Artes</p>
+            </div>
+
+            <div class="info animate__fadeInUp">
+                <p class="info-top"><span>+5M</span></p>
+                <p class="info-bottom">Vendas</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conect Heading w/ Portfólio -->
+
+    <div class="map animate__fadeInUp">
+        <img src="/assets/map.png" width="100%">
+    </div>
+
+    <!-- Portfólio Section -->
+
+    <div id="portfolio" class="portfolio">
+        <header>
+            <h1>Portfólio <span>Profissional</span></h1>
+            <p>desde 2020 levando seu negócio para o <span>Virtual</span></p>
+        </header>
+
+        <section>
+
+            <div class="swiper mySwiper">
+                <div id="swiper-wrapper" class="swiper-wrapper">
+                  <div id="swiper-slide" class="swiper-slide">
+                    <img src="assets/projects/project-1.png"/>
+                    <p>Kitchen Design UI</p>
+                    <p style="font-weight: 100;">2022</p>
+                  </div>
+                  <div id="swiper-slide" class="swiper-slide">
+                    <img src="assets/projects/project-2.png" />
+                    <p>Restaurant Menu</p>
+                    <p style="font-weight: 100;">2018</p>
+                  </div>
+                  <div id="swiper-slide" class="swiper-slide">
+                    <img src="assets/projects/project-3.png" />
+                    <p>Starbls</p>
+                    <p style="font-weight: 100;">2020</p>
+                  </div>
+                  <div id="swiper-slide" class="swiper-slide">
+                    <img src="assets/projects/project-4.png" />
+                    <p>InvoiceSherpa</p>
+                    <p style="font-weight: 100;">2022</p>
+                  </div>
+                  <div id="swiper-slide" style="width: auto;" class="swiper-slide">
+                    <img src="assets/projects/project-5.png" />
+                    <p>Aimm.</p>
+                    <p style="font-weight: 100;">2022</p>
+                  </div>
+                  <div id="swiper-slide" class="swiper-slide">
+                    <img src="assets/projects/project-6.png" />
+                    <p>Oculus</p>
+                    <p style="font-weight: 100;">2022</p>
+                  </div>
+                </div>
+                <div id="swiper-button-next" class="swiper-button-next"></div>
+                <div id="swiper-button-prev" class="swiper-button-prev"></div>
+                <div id="swiper-pagination" class="swiper-pagination"></div>
+              </div>
+        </section>
+    </div>
+
+    <!-- Conect Portfólio w/ Pacotes -->
+
+    <div class="earth">
+        <img src="/assets/earth.png" width="100%">
+    </div>
+
+    <!-- Pacotes Section -->
+
+    <div id="pacotes" class="pacotes">
+
+      <header>
+        <h1>Pacotes <span>Mensais</span></h1>
+        <p>Nossos planos são <span>customizáveis</span></p>
+      </header>
+
+      <section>
+        <div class="box-pacote">
+          <div class="box-item">
+            <img src="/assets/instagram.svg">
+          </div>
+          <div class="box-item">
+            <p class="box-title">Pacote Básico</p>
+            <h1><span>R$499</span></h1>
+          </div>
+          <div class="box-item">
+            <p><i class="fa-solid fa-circle-check"></i>Administração Instagram e Facebook</p>
+            <p><i class="fa-solid fa-circle-check"></i>Estudo de métricas das Redes Sociais</p>
+            <p><i class="fa-solid fa-circle-check"></i>10 Stories Mensais</p>
+            <p><i class="fa-solid fa-circle-check"></i>5 Stories Mensais</p>
+            <p><i class="fa-regular fa-circle-check"></i>Campanhas de 1.000 a 5.000</p>
+            <p><i class="fa-regular fa-circle-check"></i>Relatórios de Engajamento</p>
+            <p><i class="fa-regular fa-circle-check"></i>Postagens extras em datas comemorativas</p>
+          </div>
+          <div style="margin-top: 40px" class="box-item">
+            <a href="#"><button>Assinar<i style="margin-left: 5px;" class="fa-solid fa-check"></i></button></a>
+          </div>
+        </div>
+  
+        <div class="box-pacote">
+          <div class="box-item">
+            <img src="/assets/facebook.svg">
+            <img src="/assets/instagram.svg">
+          </div>
+          <div class="box-item">
+            <p class="box-title">Pacote Intermediário</p>
+            <h1><span>R$799</span></h1>
+          </div>
+          <div class="box-item">
+            <p><i class="fa-solid fa-circle-check"></i>Administração Instagram e Facebook</p>
+            <p><i class="fa-solid fa-circle-check"></i>Estudo de métricas das Redes Sociais</p>
+            <p><i class="fa-solid fa-circle-check"></i>15 Stories Mensais</p>
+            <p><i class="fa-solid fa-circle-check"></i>5 Stories Mensais</p>
+            <p><i class="fa-solid fa-circle-check"></i>Campanhas de 5.000 a 10.000</p>
+            <p><i class="fa-regular fa-circle-check"></i>Relatórios de Engajamento</p>
+            <p><i class="fa-regular fa-circle-check"></i>Postagens extras em datas comemorativas</p>
+          </div>
+          <div style="margin-top: 40px" class="box-item">
+            <a href="#"><button>Assinar<i style="margin-left: 5px;" class="fa-solid fa-check"></i></button></a>
+          </div>
+        </div>
+  
+        <div class="box-pacote">
+          <div class="box-item">
+            <img src="/assets/facebook.svg">
+            <img src="/assets/instagram.svg">
+            <img src="/assets/google.svg">
+          </div>
+          <div class="box-item">
+            <p class="box-title">Pacote Completo</p>
+            <h1><span>R$1.499</span></h1>
+          </div>
+          <div class="box-item">
+            <p><i class="fa-solid fa-circle-check"></i>Administração Instagram, Facebook e Google Maps</p>
+            <p><i class="fa-solid fa-circle-check"></i>Estudo de métricas das Redes Sociais</p>
+            <p><i class="fa-solid fa-circle-check"></i>20 Posts Mensais</p>
+            <p><i class="fa-solid fa-circle-check"></i>10 Stories Mensais</p>
+            <p><i class="fa-solid fa-circle-check"></i>5 Motion Stories</p>
+            <p><i class="fa-solid fa-circle-check"></i>Campanhas de 10.000 a 20.000</p>
+            <p><i class="fa-solid fa-circle-check"></i>Relatórios de Engajamento</p>
+            <p><i class="fa-solid fa-circle-check"></i>Postagens extras em datas comemorativas</p>
+          </div>
+          <div class="box-item">
+            <a href="#"><button>Assinar<i style="margin-left: 5px;" class="fa-solid fa-check"></i></button></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="rate" class="rate">
+      <div class="rate-boxes">
+        <div class="rate-box">
+          <i class="fa-solid fa-quote-left"></i>
+          <img src="assets/rate/people-1.jpg" width="50px">
+          <h1>Dillon Le</h1>
+          <h2>CTO | ProLabs</h2>
+          <p>"Eu aprendi da maneira mais prática que uma empresa gira em torno do marketing e nós nos movemos em torno das redes que tanto amamos!"</p>
+        </div>
+
+        <div class="rate-box">
+          <i class="fa-solid fa-quote-left"></i>
+          <img src="assets/rate/people-2.jpg" width="50px">
+          <h1>Roberta Gale</h1>
+          <h2>Digital Influencer | Aimm</h2>
+          <p>"Depois do desenvolvimento da empresa no ramo online tivemos um aumento de 50% nas vendas e na captação de clientes!"</p>
+        </div>
+
+        <div class="rate-box">
+          <i class="fa-solid fa-quote-left"></i>
+          <img src="assets/rate/people-3.jpg" width="50px">
+          <h1>Sebastian Hutchinson</h1>
+          <h2>Gerente | BusinessHome</h2>
+          <p>"O melhor investimento feito pela empresa sem dúvidas foi em marketing e hoje em dia eu posso dizer que definitivamente tivemos um aumento bem significativo na divulgação e ampliamos a área de marketing."</p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-bg">
+          <p>Info - Suporte - Marketing</p>
+          <p>Termos e Usos Políticas de Privacidade</p>
+          <p style="opacity: 50%">© 2022 Thiago Gois</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>

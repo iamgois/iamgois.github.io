@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    color: white;
+    background: #282828;
+    width: 100vw;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+}
+  
+  body::-webkit-scrollbar-track {
+    background: #282828;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #B3EBC3;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid #282828;
+  }
+
+span{
+    color: #B3EBC3;
+}
+
+.close-btn{
+    display: none;
+}
+
+.reload-btn{
+    z-index: 4;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #282828;
+    border-radius: 100%;
+    background: #B3EBC3;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.reload-btn:hover{
+    background-color: #282828;
+    border: 1px solid #B3EBC3;
+    color: #B3EBC3;
+    transform: translatey(-10px);
+}
+
+.animate__fadeInUp{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2.5s; /* don't forget to set a duration! */
+}
+
+.animate__fadeInUp__2{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 10s; /* don't forget to set a duration! */
+}
+
+.animate__fadeInLeft{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; /* don't forget to set a duration! */
+}
+
+.animate__fadeInDown{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.animate__fadeInDown__2{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+
+.animate__fadeInDown__3{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.animate__fadeInDown__4{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2.5s; /* don't forget to set a duration! */
+}
+
+.animate__fadeInRight{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* swiper js */
+
+.swiper {
+    width: 400px;
+    height: 300px;
+    padding: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+#swiper-button-next, #swiper-button-prev, #swiper-pagination{
+    color: #B3EBC3;
+}
+
+#swiper-button-next{
+    right: -75px;
+}
+
+#swiper-button-prev{
+    left: -75px;
+}
+
+/* end swiper js */
+
+/* Nav Section */
+
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.logo{
+    margin: 0 40px;
+    font-size: 36px;
+}
+
+.nav i{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    margin: 40px 20px;
+    list-style-type: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    font-size: 18px;
+    margin: 0 40px;
+    transition: .2s ease-in-out;
+}
+
+.nav-item a:hover{
+    color: #B3EBC3;
+}
+
+/* Heading */
+
+.heading{
+    margin: 0 30px;
+    width: 90vw;
+    height: 100vh;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left Heading */
+
+.heading .left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.heading .left h1{
+    font-size: 48px;
+}
+
+.heading .left p{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.heading .left button{
+    margin-top: 20px;
+    width: 16rem;
+    height: 3.5rem;
+    background: none;
+    color: #B3EBC3;
+    border: 1px solid #B3EBC3;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.heading .left button:hover{
+    background: #B3EBC3;
+    color: #282828;
+    font-weight: 600;
+    width: 18rem;
+}
+
+.heading .left button i{
+    margin-left: 15px;
+}
+
+/* Right Heading */
+
+.heading .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading .right img{
+    width: 550px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* Info Section */
+
+.infos{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.info-top{
+    font-size: 24px;
+}
+
+.info-bottom{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* Conect Heading w/ Portfolio */
+
+.map{
+    position: absolute;
+    top: 500px;
+    z-index: -1;
+}
+
+/* Conect Portfolio w/ Pacotes */
+
+.earth{
+    position: absolute;
+    top: 1000px;
+    right: 0px;
+    z-index: -1;
+}
+
+/* Portfolio Section */
+
+#portfolio{
+    width: 100vw;
+    height: 100vh;
+}
+
+#portfolio header{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+
+#portfolio header p{
+    font-weight: 200;
+    font-size: 12px;
+}
+
+
+/* Pacotes Section */
+
+#pacotes{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pacotes header{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pacotes header p{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+#pacotes section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#pacotes .box-pacote{
+    border: 1px solid #B3EBC3;
+    width: 300px;
+    height: 450px;
+    margin: 0 5px;
+    border-radius: 10px 10px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#pacotes .box-pacote img{
+    width: 30px;
+    margin-top: 20px;
+}
+
+#pacotes .box-pacote p{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-size: 12px;
+    margin: 5px 20px;
+}
+
+#pacotes .box-pacote .box-title{
+    justify-content: center;
+}
+
+#pacotes .box-pacote p i{
+    width: 18px;
+    height: auto;
+    margin-right: 5px;
+}
+
+#pacotes .box-pacote h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+#pacotes .box-pacote button{
+    background: none;
+    width: 8rem;
+    height: 2.5rem;
+    border: 1px solid #B3EBC3;
+    color: #B3EBC3;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+
+#pacotes .box-pacote button:hover{
+    background: #B3EBC3;
+    color: #282828;
+}
+
+#pacotes .box-pacote button a{
+    text-decoration: none;
+    color: #B3EBC3;
+}
+
+@keyframes opacity{
+    0%{
+        color: #B3EBC3;
+    }
+
+    50%{
+        color: #478c5b;
+    }
+
+    100%{
+        color: #B3EBC3;
+    }
+}
+
+.opacity-animation{
+    animation: opacity 2s infinite;
+}
+
+/* Rating Section */
+
+.rate{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate .rate-boxes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.rate .rate-box{
+    width: 17rem;
+    height: 15rem;
+}
+
+.rate .rate-box img{
+    border-radius: 50%;
+}
+
+.rate .rate-box h1{
+    font-size: 18px;
+}
+
+.rate .rate-box h2{
+    font-size: 8px;
+    font-weight: 200;
+}
+
+.rate .rate-box p{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.rate-box i{
+    position: absolute;
+    color: #B3EBC3;
+}
+
+.rate footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.rate footer .footer-bg{
+    width: 100%;
+    height: 10%;
+    z-index: -1;
+    background: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rate footer .footer-bg p{
+    font-size: 8px;
+}
+
+@media (max-width: 1024px){
+    .heading .right img{
+        width: 400px;
+    }
+
+    .map, .earth{
+        width: auto;
+    }
+}
+
+@media (max-width: 768px){
+
+    /* Menu Mobile */
+
+.nav-menu.active{
+    top: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    background: #B3EBC3;
+}
+
+.nav-item a.active{
+    color: black;
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.nav-item a.active:hover{
+    letter-spacing: 5px;
+    padding: 0 40px;
+}
+
+.close-btn{
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    cursor: pointer;
+    justify-content: end;
+}
+
+.close-btn>i{
+    margin: 10px 20px;
+    font-size: 2rem;
+    color: #262626;
+}
+
+    .nav i{
+        display: block;
+        margin-right: 20px;
+        font-size: 32px;
+        color: #B3EBC3;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .close-btn>i{
+        display: none;
+    }
+    
+    .heading .right img{
+        display: none;
+    }
+
+    .heading .left{
+        width: 100%;
+    }
+
+    #pacotes{
+        margin-top: 50px;
+        height: 100%;
+    }
+
+    #rate{
+        margin-top: 100px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 425px){
+
+
+
+    .nav{
+        height: 10vh;
+    }
+
+    .nav .logo{
+        margin: 0 20px;
+        font-size: 24px;
+    }
+
+    .heading{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .heading .left{
+        text-align: center;
+    }
+
+    .heading .left h1{
+        font-size: 28px;
+    }
+
+    .heading .left p{
+        font-size: 12px;
+    }
+
+    #swiper-button-next{ 
+        display: none;
+    }
+    #swiper-button-prev{ 
+        display: none;
+    }
+
+    .rate footer{
+        height: 100%;
+        margin-top: 350px;
+    }
+}
+
+@media (max-width: 375px){
+
+    .swiper{
+        width: 300px !important;
+    }
+}
