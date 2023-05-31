@@ -24,13 +24,13 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #B3EBC3;    /* color of the scroll thumb */
+    background-color: #fff;    /* color of the scroll thumb */
     border-radius: 10px;       /* roundness of the scroll thumb */
     border: 1px solid #282828;
   }
 
 span{
-    color: #B3EBC3;
+    color: #fff;
 }
 
 .close-btn{
@@ -49,15 +49,15 @@ span{
     justify-content: center;
     color: #282828;
     border-radius: 100%;
-    background: #B3EBC3;
+    background: #fff;
     cursor: pointer;
     transition: .2s ease-in-out;
 }
 
 .reload-btn:hover{
     background-color: #282828;
-    border: 1px solid #B3EBC3;
-    color: #B3EBC3;
+    border: 1px solid #fff;
+    color: #fff;
     transform: translatey(-10px);
 }
 
@@ -149,7 +149,7 @@ span{
 }
 
 #swiper-button-next, #swiper-button-prev, #swiper-pagination{
-    color: #B3EBC3;
+    color: #fff;
 }
 
 #swiper-button-next{
@@ -200,7 +200,7 @@ span{
 }
 
 .nav-item a:hover{
-    color: #B3EBC3;
+    color: #fff;
 }
 
 /* Heading */
@@ -239,8 +239,8 @@ span{
     width: 16rem;
     height: 3.5rem;
     background: none;
-    color: #B3EBC3;
-    border: 1px solid #B3EBC3;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
@@ -248,7 +248,7 @@ span{
 }
 
 .heading .left button:hover{
-    background: #B3EBC3;
+    background: #fff;
     color: #282828;
     font-weight: 600;
     width: 18rem;
@@ -367,7 +367,7 @@ span{
 }
 
 #pacotes .box-pacote{
-    border: 1px solid #B3EBC3;
+    border: 1px solid #fff;
     width: 300px;
     height: 450px;
     margin: 0 5px;
@@ -410,8 +410,8 @@ span{
     background: none;
     width: 8rem;
     height: 2.5rem;
-    border: 1px solid #B3EBC3;
-    color: #B3EBC3;
+    border: 1px solid #fff;
+    color: #fff;
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
@@ -419,18 +419,18 @@ span{
 }
 
 #pacotes .box-pacote button:hover{
-    background: #B3EBC3;
+    background: #fff;
     color: #282828;
 }
 
 #pacotes .box-pacote button a{
     text-decoration: none;
-    color: #B3EBC3;
+    color: #fff;
 }
 
 @keyframes opacity{
     0%{
-        color: #B3EBC3;
+        color: #fff;
     }
 
     50%{
@@ -438,7 +438,7 @@ span{
     }
 
     100%{
-        color: #B3EBC3;
+        color: #fff;
     }
 }
 
@@ -490,7 +490,7 @@ span{
 
 .rate-box i{
     position: absolute;
-    color: #B3EBC3;
+    color: #fff;
 }
 
 .rate footer{
@@ -540,7 +540,7 @@ span{
     width: 100vw;
     height: 100%;
     position: fixed;
-    background: #B3EBC3;
+    background: #fff;
 }
 
 .nav-item a.active{
@@ -577,7 +577,7 @@ span{
         display: block;
         margin-right: 20px;
         font-size: 32px;
-        color: #B3EBC3;
+        color: #fff;
     }
 
     .nav-menu{
